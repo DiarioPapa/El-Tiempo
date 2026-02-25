@@ -35,7 +35,7 @@ function hablar(texto, esNoticiaCompleta = false) {
 
       speechSynthesis.speak(aviso);
 
-    }, 2000); // pausa real de 2 segundos
+    }, 2000);
 
   };
 }
