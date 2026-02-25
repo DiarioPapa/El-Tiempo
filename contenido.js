@@ -1,6 +1,6 @@
 const noticias = {
 
-  portada: [
+  "primera plana": [
     {
       titulo: "Título aquí",
       texto: `Primer párrafo aquí.
