@@ -62,7 +62,10 @@ button.confirmar {
 <button class="volver" onclick="volverInicio()">⬅ VOLVER</button>
 </div>
 
-<script src="contenido.js"></script>
+<script>
+    const version = new Date().getTime();
+    document.write('<script src="contenido.js?v=' + version + '"><\/script>');
+</script>
 <script src="app.js"></script>
 
 </body>
