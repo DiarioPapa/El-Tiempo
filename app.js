@@ -23,20 +23,19 @@ function hablar(texto, esNoticiaCompleta = false) {
   if (esNoticiaCompleta) {
   mensaje.onend = function() {
 
-    // Pausa real de 2 segundos
     setTimeout(function() {
 
       const aviso = new SpeechSynthesisUtterance(
         "Fin de esta noticia. Si desea escuchar otra noticia, pulse el botón volver."
       );
 
-      aviso.lang = "es-ES";
+      aviso.voice = vozSeleccionada;
+      aviso.lang = "es-CO";
       aviso.rate = 0.9;
-      aviso.pitch = 1;
 
       speechSynthesis.speak(aviso);
 
-    }, 2000); // 2000 milisegundos = 2 segundos
+    }, 2000); // pausa real de 2 segundos
 
   };
 }
