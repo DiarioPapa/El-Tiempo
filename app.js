@@ -21,28 +21,22 @@ function hablar(texto, esNoticiaCompleta = false) {
   mensaje.rate = 0.9;
 
   if (esNoticiaCompleta) {
-  mensaje.onend = function() {
+    mensaje.onend = function() {
 
-    setTimeout(function() {
+      setTimeout(function() {
 
-      const aviso = new SpeechSynthesisUtterance(
-        "Fin de esta noticia. Si desea escuchar otra noticia, pulse el botón volver."
-      );
+        const aviso = new SpeechSynthesisUtterance(
+          "Fin de esta noticia. Si desea escuchar otra noticia, pulse el botón volver."
+        );
 
-      aviso.voice = vozSeleccionada;
-      aviso.lang = "es-CO";
-      aviso.rate = 0.9;
+        aviso.voice = vozSeleccionada;
+        aviso.lang = "es-CO";
+        aviso.rate = 0.9;
 
-      speechSynthesis.speak(aviso);
+        speechSynthesis.speak(aviso);
 
-    }, 2000);
+      }, 2000);
 
-  };
-}
-      aviso.voice = vozSeleccionada;
-      aviso.lang = "es-CO";
-      aviso.rate = 0.9;
-      speechSynthesis.speak(aviso);
     };
   }
 
