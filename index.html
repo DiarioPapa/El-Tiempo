@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias para Papá</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: black;
+}
+
+button {
+  font-size: 44px;
+  font-weight: 900;
+  color: black !important;
+  padding: 35px;
+  margin: 25px 0;
+  width: 100%;
+  border-radius: 25px;
+  border: 4px solid black;
+  background-color: white;
+  line-height: 1.2;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: background-color 0.2s ease;
+}
+
+button.confirmar {
+  background-color: #d9d9d9;
+}
+
+.volver {
+  font-size: 28px;
+  background-color: #eeeeee;
+  border: 3px solid black;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<div id="inicio">
+<h1>EL TIEMPO</h1>
+<div id="botonesSecciones"></div>
+</div>
+
+<div id="seccion" style="display:none;">
+<h1 id="tituloSeccion"></h1>
+<div id="listaNoticias"></div>
+<button class="volver" onclick="volverInicio()">⬅ VOLVER</button>
+</div>
+
+<script src="contenido.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
